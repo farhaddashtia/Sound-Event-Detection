@@ -107,11 +107,3 @@ final_model.compile(optimizer='adam', loss='binary_crossentropy',metrics=['accur
 final_model.fit([X_train_GCC, X_train_mel, X_train_ACR], Y_train,  batch_size=32, nb_epoch=2, verbose=1)
 
 score =final_model.evaluate([X_test_GCC, X_test_mel, X_test_ACR], Y_test, verbose=0)
-
-
-
-
-
-
-
-
